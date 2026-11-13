@@ -1,4 +1,5 @@
 import os
+import asyncio
 
 from vkbottle.bot import Bot, Message
 
@@ -16,4 +17,4 @@ async def start_message(message: Message):
 
 
 if __name__ == "__main__":
-    bot.run_forever()
+    asyncio.run(bot.run_polling())
